@@ -1,0 +1,52 @@
+\documentclass[a4paper, 14pt]{article}
+
+\usepackage[utf8]{inputenc}  
+\usepackage[T1, T2A]{fontenc}
+\usepackage[russian,english]{babel} 
+\selectlanguage{english}
+\usepackage{graphicx}
+
+\usepackage[margin=2truecm]{geometry}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{amsthm, amsmath, amsfonts, amssymb}
+%Theorem styles
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[subsection]
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{lemma}{Lemma}[subsection]
+\newtheorem*{collorary}{Collorary}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{example}{Example}
+%Symbols
+\newcommand{\llim}[2]{\lim\limits_{#1 \to #2}}
+\newcommand{\llimn}{\lim\limits_{n \to \infty}}
+\newcommand                                                        {\limmin}{\ensuremath{\underset{n\to\infty}{\underline{\lim}}}}
+\newcommand{\limmax}{\ensuremath{\overline{\llimn}}}
+\newcommand{\seqn}[1]{\{#1_n\}_{n=1}^{\infty}}
+
+\newcommand{\N}{{\char 157}}
+\newcommand*{\nset}{\mathbb{N}}
+\newcommand*{\qset}{\mathbb{Q}}
+\newcommand*{\irset}{\mathbb{I}}
+\newcommand*{\rset}{\mathbb{R}}
+\newcommand*{\zset}{\mathbb{Z}}
+\newcommand{\ans}[1]{\textbf{Answer:} #1}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+
+\title{}
+\date{\today}
+\author{Oleg Vasilev}
+
+
+\everymath{\displaystyle}
+
+\begin{document}
+\maketitle
+У каждого гена есть специальный параметр - экспрессия, то, насколько интенсивно по этому гену воспроизводится белок. Есть белки с высокой экспрессией, с низкой, а бывают такие, которые вообще не воспроизводятся, при этом экспрессия конкретного гена не только может отличаться для разных людей, но изменять своё значение со временем - например, в течении дня или по мере старения. Понять что конкретно повлияло на изменение экспрессии какого-то гена не всегда просто, в частности, одни белки могут влиять на экспрессию других генов. Наша задача как раз была посвящена исследованию такого влияния. 
+На входе был ориентированный взвешенный граф, в котором вершины означают гены, ребра - потенциальную зависимость между генами, а вес на ребре - сила влияния. 
+\end{document}
+
